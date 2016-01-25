@@ -3,7 +3,7 @@
 }
 
 .place {
-  cursor: crosshair;
+  cursor: pointer;
   color: #0088cc;
 }
 

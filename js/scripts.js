@@ -19,9 +19,16 @@ $(document).ready(function() {
     var newPlace = new Place(inputtedPlaceName,inputtedPlaceLocation,inputtedYearVisited);
 
     $('ul#places').append('<li><span class="place">' + inputtedPlaceName + '</span></li>');
-// debugger;
+
     $("input#new-place-name").val("");
     $("input#location").val("");
     $("input#year-visited").val("");
+
+    $(".place").last().click(function() {
+      $("#placeInfo").show();
+      $("#placeInfo h2").text(newPlace.placeName);
+      $(".place-location").text(newPlace.placeLocation);
+      $(".year-visited").text(newPlace.yearVisited);
+    });
   });
 });
