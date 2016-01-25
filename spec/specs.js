@@ -7,7 +7,7 @@ describe("Place", function(){
   });
 
   it("creates a method that concats the place name and year visited", function(){
-    var testPlace = new Place("Empire State Building","2011");
+    var testPlace = new Place("Empire State Building","","2011");
     expect(testPlace.locDate()).to.equal("Empire State Building 2011");
   });
 });

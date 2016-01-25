@@ -3,3 +3,7 @@ var Place = function(placeName,placeLocation,yearVisited) {
   this.placeLocation = placeLocation;
   this.yearVisited = yearVisited;
 }
+
+Place.prototype.locDate = function(){
+  return this.placeName + " " + this.yearVisited;
+}
